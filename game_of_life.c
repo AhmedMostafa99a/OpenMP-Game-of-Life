@@ -29,8 +29,11 @@ void display(int *grid, int r, int c) {
     printf("\nThe state of generation is:\n\n");
     for (int i = 1; i <= r; i++) {
         for (int j = 1; j <= c; j++) {
-            printf("%d", arr(grid, i, j, c));
-            if (j < c) printf(" ");
+            if (arr(grid, i, j, c) == 1) {
+                printf("🟩"); 
+            } else {
+                printf("⬛");
+            }
         }
         printf("\n");
     }
@@ -101,7 +104,7 @@ int main() {
     srand(time(NULL)); 
 
     do {
-        printf("=== Hello in Game Of Life (OpenMP in C) === \n");
+        printf("=== Hello in Game Of Life === \n");
         int option;
         printf("Choose an option:\n");
         printf("[1] Random initialization\n");
