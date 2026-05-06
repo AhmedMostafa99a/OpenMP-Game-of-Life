@@ -6,6 +6,8 @@
 
 A high-performance parallel implementation of **Conway's Game of Life** using **OpenMP** for shared-memory parallelism. This implementation features configurable grid initialization, terminal-based visualization with colored output, and optimized parallel computation of cellular automaton rules.
 
+<img width="450" height="632" alt="image" src="https://github.com/user-attachments/assets/a324c1c0-5c77-4895-829b-a3042c3b4b4a" />
+
 ## Features
 
 - **Parallel Processing**: Leverages OpenMP for multi-threaded performance
